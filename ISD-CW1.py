@@ -1,7 +1,4 @@
 #1) Refactor the following conditional without using any boolean operators (note: this will increase the number of branches)
-# 4 marks
-
-# Hint you may want to comment out an answer so you can focus on the next question. To comment/uncomment simply select the lines and then press together the ctrl  and /  keys.
 
 units = input("please input units, either miles or km ")
 distance = int(input("please input the distance you wish to travel as a whole number "))
@@ -19,8 +16,6 @@ elif units == 'km':
 
 
 #2) Refactor the following code to reduce the number of  branches.
-# A program that is short but gives the incorrect output will be given fewer marks than a program that is longer but gives the correct output.
-# 8 marks
 
 a = input("please input y or n or c:  ")
 b = input("please input y or n or c:  ")
@@ -36,7 +31,10 @@ else:
 print(output)
 
 
-#3)  Write your program below. 35 marks.
+#3)  Write your program below.
+
+# A basic program to determine the life stages of either a dog or a 
+# human using if-else statments and implements basic error checking.
 
 mammal = input('Please input the either (d)og or (h)uman: ')
 age = input('Please input the age in whole months: ')
