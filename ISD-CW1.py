@@ -1,5 +1,13 @@
 #1) Refactor the following conditional without using any boolean operators (note: this will increase the number of branches)
 
+# units = input("Please input units, either miles or km ")
+# speed = int(input("Now input your speed as a whole number "))
+# if (units == "miles" and distance > 100) or (units == "km" and distance > 161):
+  # print("Too Far")
+# else:
+  # print("OK")
+
+
 units = input("please input units, either miles or km ")
 distance = int(input("please input the distance you wish to travel as a whole number "))
 
@@ -17,6 +25,25 @@ elif units == 'km':
 
 #2) Refactor the following code to reduce the number of  branches.
 
+# a = input("please input y or n or c")
+# b = input("please input y or n or c")
+# if a=="y":
+  # if b == "y":
+    # output = "OK"
+  # elif b == "n":
+    # output = "OK"
+  # else:
+    # output = "OK"
+# elif a == "n":
+  # if b == "c":
+    # output = "OK"
+  # else:
+    # output = "Not OK"
+# else:
+  # output = "Not OK"
+# print(output)
+
+
 a = input("please input y or n or c:  ")
 b = input("please input y or n or c:  ")
 
@@ -28,10 +55,12 @@ elif a == "n" and b == "c":
 
 else:
   output = "Not OK"
+  
 print(output)
 
 
-#3)  Write your program below.
+#3)  Write a program that asks for a mammal, either dog or human, and then
+# an age in months.
 
 # A basic program to determine the life stages of either a dog or a 
 # human using if-else statments and implements basic error checking.
