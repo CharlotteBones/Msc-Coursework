@@ -1,3 +1,5 @@
+// https://www.learn-js.org/en/Conditions
+
 function checkNumber(myArgument)
 {
     if (myArgument == 42){
