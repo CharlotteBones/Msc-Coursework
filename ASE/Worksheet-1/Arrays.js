@@ -1,3 +1,5 @@
+// https://www.learn-js.org/en/Arrays
+
 var myArray = ['What is the meaning of life?', 42, true];
 
 console.log(myArray[0]);
