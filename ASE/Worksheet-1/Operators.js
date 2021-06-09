@@ -1,3 +1,5 @@
+// https://www.learn-js.org/en/Operators
+
 var firstName = "John";
 var lastName = "Smith";
 var myNumber = 21;
