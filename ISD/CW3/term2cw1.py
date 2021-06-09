@@ -1,14 +1,4 @@
-# I have read and understood the sections of plagiarism in the College Policy
-# on assessment offences and confirm that the work is my own,
-# with the work of others clearly acknowledged.
-# I give my permission to submit my work to the plagiarism testing database
-# that the College is using and test it using plagiarism detection software,
-# search engines or meta-searching software.
-
-
-# Charlotte Bones MSc Information Technology 14/02/2021
-
-
+# This file is the coursework file, the others were provided to test the program, make it work and provide data.
 # Only write function definitions in this file
 
 
