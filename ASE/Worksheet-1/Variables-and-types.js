@@ -1,3 +1,5 @@
+// https://www.learn-js.org/en/Variables_and_Types
+
 var myNumber = 4;
 var myString = 'Variables are great';
 var myBoolean = false;
