@@ -1,3 +1,5 @@
+// https://www.learn-js.org/en/Manipulating_Arrays
+
 var myArray = [true, "What is the meaning of life?"];
 
 myArray.push(42);
