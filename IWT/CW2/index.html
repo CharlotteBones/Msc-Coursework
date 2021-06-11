@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>European Populations</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>European Populations</h1>
+
+    <form action="queryprocess.php" method="GET">
+
+        <div id="queries">
+            <ul>
+                <label for="pop">Total Population</label>
+                <input type="checkbox" name="pop" value="x">
+
+                <label for="birth">Birth Rate</label>
+                <input type="checkbox" name="birth" value="x">
+
+                <label for="death">Death Rate</label>
+                <input type="checkbox" name="death" value="x">
+            </ul><br>
+
+            <label for="less/greater">Birth Rate Death Rate Comparison</label><br><br>
+            <select name="less/greater" id="less/greater">
+                <option value="">Not Specified</option>
+                <option value="birth>">Birth > Death</option>
+                <option value="death>">Death > Birth</option>
+            </select><br><br>
+
+            <label for="verpop">Population</label><br>
+            <input type="text" id="verpop" name="verpop" placeholder="8217">
+            <select name="operator" id="operator">
+                <option value="">None</option>
+                <option value="<"><</option>
+                <option value=">">></option>
+            </select><br><br>
+
+                
+            <label for="lang">Spoken Language</label><br>
+            <input type="text" id="lang" name="lang">
+            <br><br>
+
+            <input id="button" type="submit" value="submit">
+            <input id="button" type="reset" value="clear">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
