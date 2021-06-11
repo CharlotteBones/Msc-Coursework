@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Oscars Search</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Check the Oscars</h1>
+
+    <form class="searchQuery">
+
+        <label for="year">Year of Award:</label><br>
+        <input type="text" id="year" name="year" placeholder="2010 (83rd)"><br>
+
+        <label for="yearSelect">Year Picker</label><br><br>
+        <select name="yearSelect" id="yearSelect">
+            <option value="">None</option>
+        </select><br><br>
+
+        <label for="cat">Category:</label><br>
+        <input type="text" id="cat" name="cat" placeholder="Actor -- Leading Role"><br>
+
+        <label for="nominee">Nominee:</label><br>
+        <input type="text" id="nominee" name="nominee" placeholder="Javier Bardem"><br>
+
+        <label for="info">Other information:</label><br>
+        <input type="text" id="info" name="info" placeholder="Biutiful {'Uxbal'}"><br>
+
+        <label for="nomineeOrinfo">Nominee/Other Info</label><br>
+        <input type="text" id="nomineeOrinfo" name="nomineeOrinfo" placeholder="Javier Bardem Biutiful {'Uxbal'}"><br>
+
+        <label for="won">Won:</label><br><br>
+        <select name="won" id="won">
+            <option value="">All</option>
+            <option value="yes">Won</option>
+            <option value="no">Didn't win</option>
+        </select><br><br>
+
+        <input id="button" type="submit" value="submit">
+        <input id="button" type="reset" value="clear">
+
+    </form>
+
+    <br><br>
+    <p id="resultReturn"></p>
+
+    <table style="width: 90%;">
+
+        <tr>
+            <th style="width: 10%;">Year</th>
+            <th style="width: 20%;">Category</th>
+            <th style="width: 20%;">Nominee</th>
+            <th style="width: 40%;">Information</th>
+            <th style="width: 10%;">Won</th>
+        </tr>
+
+        <tbody id="oscarout">
+
+        </tbody>
+
+
+    </table>
+
+    <div class="errormssgwrap">
+        <div class="error">
+            <div class="close">x</div>
+            <div class="mssg"></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="oscarquery.js"></script>
+
+</body>
+
+</html>
