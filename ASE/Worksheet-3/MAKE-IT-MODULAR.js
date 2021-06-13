@@ -18,3 +18,20 @@ module.exports = function (dir, ext, callback) {
 		callback(null, dataList);
 	});
 };
+
+// The file
+const dir = process.argv[2];
+const ext = process.argv[3];
+const mymodule = require('./mymodule');
+
+const callback = (err, data) => {
+
+	for (let i = 0; i < data.length; i++) {
+		console.log(data[i]);
+	}
+    if (err) {
+        return console.error(err);
+      }
+    };
+    
+mymodule(dir, ext, callback);
