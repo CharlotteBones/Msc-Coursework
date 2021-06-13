@@ -32,6 +32,6 @@ const callback = (err, data) => {
     if (err) {
         return console.error(err);
       }
-    };
+};
     
 mymodule(dir, ext, callback);
