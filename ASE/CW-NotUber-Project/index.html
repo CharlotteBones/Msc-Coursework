@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Uber | Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="header">
+        <img src="/images/NU.png" alt="Not Uber Logo" id="logo">
+        <ul>
+            <li id="req"><img src="/images/caricon.png" alt="Request a ride"  id="icon">Request a ride!</li>
+            <li><a href="map/map.html"><img src="/images/mapicon.png" alt="View map" id="icon">View Map</a></li>
+            <li id="status"><img src="/images/position.png" alt="location" id="icon">View Ride Status</li>
+            <li id="reset"><img src="/images/bin.png" alt="Cancel" id="icon">Cancel Rides</li>
+        </ul>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="reqRide">
+        <form>
+
+            <h2>Request a ride now!</h2>
+            <div id="pickupDropoff">
+                <img src="/images/position.png" alt="position" id="icon">
+                <label for="pickup">Enter a pick up location</label>
+                <input type="text" class="form-control" id="pickup" name="pickup">
+                <button type="button" onclick="document.getElementById('pickup').value = ''"><img src="/images/bin.png" alt="clear"></button>
+            </div>
+            <div id="pickupDropoff">
+                <img src="/images/position.png" alt="position" id="icon">
+                <label for="dropoff">Enter a drop off location</label>
+                <input type="text" class="form-control" id="dropoff" name="dropoff">
+                <button type="button" onclick="document.getElementById('dropoff').value = ''"><img src="/images/bin.png" alt="clear"></button>
+            </div>
+
+            <br><br>
+            <div id="err">
+                <span>Sorry! :(</span>
+                <h2>We couldn't process your request</h2>
+                <p>There are no more cars available right now</p>
+            </div>
+
+            <div id="submitbutton">
+                <input type="submit" id="submit" value="submit">
+            </div>
+
+        </form>
+    </div>
+
+    <div id="booking">
+        <div id="mssg">
+            <h3>Booked!</h3>
+            <p>Your driver is on their way</p>
+        </div>
+        <hr>
+        <br>
+        <div id="receipt">
+            <h3>Car ID:</h3> 
+            <span id="id">mXfkjrFw</span>
+            <br><br>
+        </div>
+    </div>
+
+    <div id="cancelled">
+        <h1>Your bookings were cancelled successfully</h1>
+    </div>
+
+    <div id="carstatus">
+        <h1 style="text-align: center;">Car Status</h1>
+        <hr>
+        <ul>
+            <li id="car-mXfkjrFw"></li>
+            <li id="car-nZXB8ZHz"></li>
+            <li id="car-Tkwu74WC"></li>
+            <li id="car-5KWpnAJN"></li>
+            <li id="car-VMerzMH8"></li>
+            <li id="car-uf5ZrXYw"></li>
+            <li id="car-8efT67Xd"></li>
+        </ul>
+    </div>
+
+    <script src="home.js"></script>
+    <script src="map/google-map.js"></script>
+
+</body>
+</html>
