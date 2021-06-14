@@ -1,0 +1,267 @@
+/* map formating */
+
+#map {
+    height: 100%;
+    position: relative;
+    border: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* Nav bar */
+
+#header {
+    padding-left: 10px;
+    color: #ff8f00;
+    background-color: #c9c9c9;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+}
+
+ul {
+    margin: 3px;
+    padding: 13px;
+    float: left;
+}
+
+#logo {
+    height: 70px;
+    float: left;
+}
+
+#icon {
+    height: 25px;
+    padding-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+#header li {
+    display: inline;
+    padding: 25px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#header li:hover, a:hover {
+    background-color: #e2e2e2;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff8f00;
+}
+
+
+/* Form styles */
+
+#reqRide h2{
+    text-align: left;
+    padding-left: 40px;
+}
+
+form {
+    position: fixed;
+    width: 20%;
+    height: 70%;
+    background-color: #c9c9c9f1;
+    top: 15%;
+    left: 5%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+label {
+    font-size: 20px;
+}
+
+#pickupDropoff {
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #ff8f00;
+    border-radius: 5px;
+}
+
+#pickupDropoff img {
+    float: left;
+    z-index: 3;
+    margin-top: 8px;
+
+}
+
+input[type="text"] {
+    background-color: #c9c9c9f1;
+    color: #ff8f00;
+    position: relative;
+    bottom: 15px;
+    height: 25px;
+    margin-right: 0px;
+    font-size: 18px;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid #ff8f00;
+}
+
+input[type="text"]:focus, button:focus, #submit:focus{
+    outline: none;
+}
+
+button {
+    background-color: #c9c9c900;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+}
+
+#err {
+    display: none;
+}
+
+#submit {
+    width: 90%;
+    padding: 15px;
+    color: #f2f2f2;
+    background-color: #ff8f00;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#submitbutton {
+    padding-left: 35px;
+    position: absolute;
+    width: 90%;
+    bottom: 16px;
+}
+
+#submitbutton {
+    bottom: 30px;
+}
+
+#submit:hover {
+    background-color: #f2f2f2;
+    color: #ff8f00;
+}
+
+
+/* Receipt styles */
+
+#booking h3 {
+    margin: 0px;
+    font-size: 25px;
+}
+
+#booking {
+    position: fixed;
+    display: none;
+    width: 20%;
+    height: 40%;
+    background-color: #c9c9c9;
+    top: 15%;
+    left: 5%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#mssg {
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+}
+
+hr {
+    border-top: #ff8f00 dashed 2px;
+    border-bottom: #ff8f00 dashed 2px;
+    margin: 10px;
+}
+
+#receipt, #carinfo, #err {
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #ff8f00;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#receipt h3 {
+    margin: 20px;
+}
+
+#id {
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline dashed;
+    color: #ff8f00;
+}
+
+#eta, span {
+    font-size: 50px;
+    color: #ff8f00;
+    padding: 20px;
+}
+
+
+/* Status styles */
+
+#carstatus {
+    position: fixed;
+    float: left;
+    display: none;
+    width: 57%;
+    height: 80%;
+    background-color: #c9c9c9;
+    top: 15%;
+    left: 20%;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: scroll;
+}
+
+#carstatus li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    font-size: 20px;
+    width: 480px;
+    height: 60%;
+    
+}
+
+#carinfo h3{
+    margin: 5px;
+}
+
+
+/* Reset styles */
+
+#cancelled {
+    position: fixed;
+    display: none;
+    width: 400px;
+    height: 150px;
+    background-color: #c9c9c9;
+    top: 15%;
+    left: 40%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#cancelled h1 {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
