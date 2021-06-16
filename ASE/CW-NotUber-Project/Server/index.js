@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise
 
-mongoose.connect('mongodb+srv://user:aN4BsuQtCVu9Z-R@notuber.8mdfv.mongodb.net/NotUber?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://<user>:<password>@notuber.8mdfv.mongodb.net/NotUber?retryWrites=true&w=majority', 
 { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 mongoose.connection.once('open', () => {
