@@ -1,6 +1,6 @@
 The NotUber Project was a three part Coursework for the ASE module as a portfolio piece.  The goal was to make a 
 fullstack app for a fictional hail and ride service with Google maps API, a front end booking system 
-( Using longditued and latitude inputs ), and a back end with a Mongo DB connection.  
+( Using longitude and latitude inputs ), and a back end with a Mongo DB connection.  
 I spent about a month developing the entire thing with two weeks on Part II.
 
 Part I - map folder, to have a full screen map using Google API with some custom car markers.
